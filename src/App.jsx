@@ -1,17 +1,15 @@
-import { useState } from 'react'
-import './App.css'
+import React from 'react'
+import Header from './components/Header.jsx'
+import Navbar from './components/Navbar.jsx'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <div>
-        <h1>Girlcode store</h1>
-      </div>
+    <div>
+      <Header/>
+      <Navbar/>
+    </div>
     
-    </>
   )
 }
 
-export default App
+
