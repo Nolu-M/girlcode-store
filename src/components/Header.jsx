@@ -16,7 +16,8 @@ export default function() {
                     <option value="IsiXhosa">Xhosa</option>
                     <option value="IsiZulu">IsiZulu</option>
                 </select>
-                <select name="location" id="">
+                <select name="location" id="location">
+                    <option value="location">Location</option>
                     <option value="cape-town">Cape Town</option>
                     <option value="johannesburg">Johannesburg</option>
                     <option value="durban">Durban</option>

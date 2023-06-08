@@ -31,7 +31,7 @@ body {
     margin-top: 20px;
 }
 
-select {
+#language, #location {
     border: none;
     background-color: #e94154;
     margin: 10px;
@@ -52,9 +52,13 @@ nav {
     border-radius: 10px;
     background-color: rgb(245, 239, 239);
     border: none;
+    position: relative;
+    margin-top: 20px;
 }
 
 .search-bar-icon {
-    position: absolute;
+    
+    
+    
 }
 

@@ -8,7 +8,13 @@ export default function() {
                 <a href="#">ShopCart</a>
             </div>
             <div>
-                <button>Categories</button>
+                <select class="navbar-options">
+                    <option value="categories">Categories</option>
+                    <option value="laptops">Laptops</option>
+                    <option value="desktop-pcs">Desktop PCs</option>
+                    <option value="mechanical-keyboards">Mechanical keyboards</option>
+                    <option value="Laptops">Laptops</option>
+                </select>
             </div>
             <div>
                 <a href="#">Deals</a>
@@ -19,17 +25,17 @@ export default function() {
             <div>
                 <a href="#">Delivery</a>
             </div>
-            <div>
+            <div class="navbar-search">
             <i class="search-bar-icon">
                 <span class="material-symbols-outlined">search</span>
             </i>
                 <input class="search-bar" type="text" placeholder='Search Product'/>
             </div>
-            <div>
+            <div class="navbar-account">
                 <span class="material-symbols-outlined">person</span>
                 <a href="#">Account</a>
             </div>
-            <div>
+            <div class="navbar-cart">
                 <span class="material-symbols-outlined">shopping_cart</span>
                 <a href="#">Cart</a>
             </div>
