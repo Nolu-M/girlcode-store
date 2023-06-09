@@ -1,14 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+
+* {
+    font-family: 'Manrope', sans-serif;
+}
+
 body {
     margin: 0;
 }
 
 .header-base {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #e94154;
     width: 100%;
     height: 100%;
     color: white;
+    
 }
 
 .header-contact {
@@ -21,11 +28,18 @@ body {
 
 .contact-number {
     color: white;
+    text-decoration: none;
 }
 
-.header-info {
+.contact-number a span {
+    vertical-align: middle;
+}
+
+.header-info p {
     align-self: center;
 }
+
+
 
 .header-dropdown {
     margin-top: 20px;
@@ -56,9 +70,8 @@ nav {
     margin-top: 20px;
 }
 
-.search-bar-icon {
-    
-    
-    
+.navbar-options {
+    margin-top: 20px;
 }
+
 

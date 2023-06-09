@@ -2,15 +2,15 @@ import React from 'react'
 
 export default function() {
     return (
-        <header class="header-base">
-            <div class="header-contact">
+        <header className="header-base">
+            <div className="header-contact">
                 <span class="material-symbols-outlined">phone</span>
-                <a href="#" class="contact-number">+27 11 546 7899</a>
+                <a href="+27 11 546 7899" className="contact-number">+27 11 546 7899</a>
             </div>
-            <div class="header-info">
-                <p>Get 50% off on Selected Items | Shop now</p>
+            <div className="header-info">
+                <p>Get 50% off on Selected Items | <a href="#">Shop now</a></p>
             </div>
-            <div class="header-dropdown">
+            <div className="header-dropdown">
                 <select name="language" id="language">
                     <option value="english">English</option>
                     <option value="IsiXhosa">Xhosa</option>
@@ -23,7 +23,7 @@ export default function() {
                     <option value="durban">Durban</option>
                 </select>
             </div>
-  </header>
+        </header>
 
     )
 }

@@ -4,11 +4,11 @@ export default function() {
     return (
         <nav>
             <div>
-                <img class="shopping-cart" src="./public/cart.png" alt="shopping cart image"/>
-                <a href="#">ShopCart</a>
+                <img className="shopping-cart" src="/cart.png" alt="shopping cart image"/>
+                <a className="logo" href="#">ShopCart</a>
             </div>
             <div>
-                <select class="navbar-options">
+                <select className="navbar-options">
                     <option value="categories">Categories</option>
                     <option value="laptops">Laptops</option>
                     <option value="desktop-pcs">Desktop PCs</option>
@@ -25,18 +25,18 @@ export default function() {
             <div>
                 <a href="#">Delivery</a>
             </div>
-            <div class="navbar-search">
-            <i class="search-bar-icon">
-                <span class="material-symbols-outlined">search</span>
+            <div className="navbar-search">
+            <i className="search-bar-icon">
+                <span className="material-symbols-outlined">search</span>
             </i>
-                <input class="search-bar" type="text" placeholder='Search Product'/>
+                <input className="search-bar" type="text" placeholder='Search Product'/>
             </div>
-            <div class="navbar-account">
-                <span class="material-symbols-outlined">person</span>
+            <div className="navbar-account">
+                <span className="material-symbols-outlined">person</span>
                 <a href="#">Account</a>
             </div>
-            <div class="navbar-cart">
-                <span class="material-symbols-outlined">shopping_cart</span>
+            <div className="navbar-cart">
+                <span className="material-symbols-outlined">shopping_cart</span>
                 <a href="#">Cart</a>
             </div>
         </nav>
