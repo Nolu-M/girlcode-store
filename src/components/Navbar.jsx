@@ -22,7 +22,7 @@ export default function() {
                 <li><a href="#">What's New</a></li>
                 <li><a href="#">Delivery</a></li>
             </ul>
-            <div className='flex items-center'>
+            <div className='flex justify-between items-center'>
                 <form className='bg-slate-200 relative w-fit py-1.5 px-5 rounded-3xl'>
                     <input className='outline-0 bg-transparent' type="text" placeholder='Search Products'/>
                     <button>
