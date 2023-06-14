@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './components/Header.jsx'
 import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
+import CategorySection from './components/CategorySection.jsx'
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
       <Header/>
       <Navbar/>
       <Hero/>
+      <CategorySection/>
     </div>
     
   )
