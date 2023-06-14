@@ -4,12 +4,15 @@ export default {
   "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
     extend: {
-      colors: {
-        'girlcode-pink': ["#e94154"],
-      },
       fontFamily: {
         'primary': ['Manrope', 'sans-serif']
       }, 
+      backgroundImage: {
+        'hero-section': "url('/src/assets/hero-section.png')"
+      },
+      colors: {
+        'girlcode-pink': "#e94154"
+      }
     },
   },
   plugins: [],
