@@ -1,14 +1,36 @@
+import FurnImg from '../assets/Furniture.jpg'
+
 export default function()  {
     return (
         <section className='pt-20'>
             <div className='container mx-auto'>
-                <div className='first-letter:So'>
-                    <h2 className='text-2xl mb-9'>Shop Our Top Categories</h2>
+                <div className='mb-9'>
+                    <h2 className='text-2xl font-extrabold'>Shop Our Top Categories</h2>
                 </div>
-                <div className='grid'>
-                    <div className=''>
-                        <img src="" alt="" />
-                        <h3>Furniture</h3>
+                <div className='grid grid-cols-6 gap-8'>
+                    <div className='rounded-xl overflow-hidden relative'>
+                        <img src={FurnImg} alt="furniture Category"/>
+                        <h3 className='absolute top-3 left-1/2 text-2xl font-extrabold text-girlcode-pink -translate-x-1/2'>Furniture</h3>
+                    </div>
+                    <div className='rounded-xl overflow-hidden relative'>
+                        <img src={FurnImg} alt="furniture Category"/>
+                        <h3 className='absolute top-3 left-1/2 text-2xl font-extrabold text-girlcode-pink -translate-x-1/2'>Furniture</h3>
+                    </div>
+                    <div className='rounded-xl overflow-hidden relative'>
+                        <img src={FurnImg} alt="furniture Category"/>
+                        <h3 className='absolute top-3 left-1/2 text-2xl font-extrabold text-girlcode-pink -translate-x-1/2'>Furniture</h3>
+                    </div>
+                    <div className='rounded-xl overflow-hidden relative'>
+                        <img src={FurnImg} alt="furniture Category"/>
+                        <h3 className='absolute top-3 left-1/2 text-2xl font-extrabold text-girlcode-pink -translate-x-1/2'>Furniture</h3>
+                    </div>
+                    <div className='rounded-xl overflow-hidden relative'>
+                        <img src={FurnImg} alt="furniture Category"/>
+                        <h3 className='absolute top-3 left-1/2 text-2xl font-extrabold text-girlcode-pink -translate-x-1/2'>Furniture</h3>
+                    </div>
+                    <div className='rounded-xl overflow-hidden relative'>
+                        <img src={FurnImg} alt="furniture Category"/>
+                        <h3 className='absolute top-3 left-1/2 text-2xl font-extrabold text-girlcode-pink -translate-x-1/2'>Furniture</h3>
                     </div>
                 </div>
         
