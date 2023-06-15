@@ -9,7 +9,7 @@ export default function() {
                     <p className='mb-10 mt-9'>Shopping is a bit of a relaxing hobby for me, which is
                         sometimes<br/> troubling for the bank balance.
                     </p>
-                    <a className='bg-[#e94154] text-base text-[#fff] font-semibold py-3.5 px-7 rounded-3xl' href='#'>Learn More</a>
+                    <a className='btn bg-girlcode-pink text-white' href='#'>Learn More</a>
                 </div>
             </div>
         </section>
