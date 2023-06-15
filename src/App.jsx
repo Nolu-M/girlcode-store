@@ -1,18 +1,14 @@
-import React from 'react'
-import Header from './components/Header.jsx'
-import Navbar from './components/Navbar.jsx'
-import Hero from './components/Hero.jsx'
-import CategorySection from './components/CategorySection.jsx'
-import DealsSection from './components/DealsSection.jsx'
+import { Route, Routes} from 'react-router-dom'
+import Home from '../Pages/Home.jsx'
+
 
 export default function App() {
   return (
     <div>
-      <Header/>
-      <Navbar/>
-      <Hero/>
-      <CategorySection/>
-      <DealsSection/>
+      <Routes>
+        <Route path='/' element={<>Home</>} />
+        <Route path='/' element={<>Test</>} />
+      </Routes>
     </div>
     
   )
