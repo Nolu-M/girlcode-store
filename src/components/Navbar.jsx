@@ -1,13 +1,13 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 import logo from '../assets/logo-black.png'
 
 export default function() {
     return (
         <div className='nav-bar py-3'>
             <div className='container mx-auto flex justify-between items-center'>
-                <a className='w-44 block' href="#">
+                <Link to='/' className='w-44 block'>
                     <img src={logo} alt="Girlcode store logo" />
-                </a>
+                </Link>
             <ul className='flex gap-6 font-bold'>
                 <li>
                 <select className="navbar-options">

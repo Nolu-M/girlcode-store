@@ -1,15 +1,17 @@
-import { Route, Routes} from 'react-router-dom'
-import Home from '../Pages/Home.jsx'
+import { Route, Routes } from 'react-router-dom'
+import Home from './pages/Home.jsx'
+import Category from './pages/Category.jsx'
+
 
 
 export default function App() {
   return (
-    <div>
+    <>
       <Routes>
-        <Route path='/' element={<>Home</>} />
-        <Route path='/' element={<>Test</>} />
+        <Route path='/' element={<Home />} />
+        <Route path='/Category' element={<Category />} />
       </Routes>
-    </div>
+    </>
     
   )
 }
