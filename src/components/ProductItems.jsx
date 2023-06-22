@@ -2,7 +2,7 @@ import DealsImg from '../assets/deals.png'
 import StarSvg from '../assets/star.svg'
 import HeartSvg from '../assets/heart.svg'
 
-export default function() {
+export default function ProductItems() {
     return (
                     <div className=''>
                         <div className='relative rounded-xl overflow-hidden bg-[#f5f6f6] text-center mb-7'>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function() {
+export default function Header() {
     return (
         <header className='flex justify-between bg-[#e94154] font-primary text-white p-2.5'>
             <div className='ml-10'>
