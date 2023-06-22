@@ -6,15 +6,15 @@ export default function DealsSection() {
     const DealsList = [
         {
             name: "HomePod mini",
-            path: "Deals/homepod-mini"
+            path: "/deals/homepod-mini"
         },
         {
             name: "Instax Mini 9",
-            path: "Deals/instax-mini 9"
+            path: "/deals/instax-mini 9"
         },
         {
             name: "Base Camp Duffel M",
-            path: "Deals/base camp duffel m"
+            path: "/deals/base camp duffel m"
         }
     ]
     return (

@@ -1,6 +1,6 @@
-import {useEffect, useState} from "react";
+import { useEffect, useState} from "react"
+import { Link } from 'react-router-dom';
 import furnImg from '../assets/furniture.jpg';
-import { Link } from 'react-router-dom'
 
 export default function CategorySection()  {
     const [catList, setCatList] = useState([])

@@ -9,6 +9,6 @@ export default function() {
           <Hero/>
           <CategorySection/>
           <DealsSection/>
-      </MainLayout>
+        </MainLayout>
     )
 }
