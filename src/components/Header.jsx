@@ -4,7 +4,7 @@ export default function Header() {
     return (
         <header className='flex justify-between bg-[#e94154] font-primary text-white p-2.5'>
             <div className='ml-10'>
-                <span class='material-symbols-outlined align-middle'>phone</span>
+                <span className='material-symbols-outlined align-middle'>phone</span>
                 <a href="+27 11 546 7899" className=''>+27 11 546 7899</a>
             </div>
             <div className="header-info">

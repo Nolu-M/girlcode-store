@@ -29,7 +29,7 @@ export default function NavBar() {
                         <span className="material-symbols-outlined align-middle">search</span>
                     </button>
                 </form>
-                <a ClassName='font-bold'href="#">
+                <a className='font-bold'href="#">
                 <span className="material-symbols-outlined align-middle">person</span>
                 Account</a>
                 <a className='ml-2.5'href="#">
