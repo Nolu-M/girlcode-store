@@ -1,12 +1,11 @@
-import DealsImg from '../assets/deals.png'
 import StarSvg from '../assets/star.svg'
 import HeartSvg from '../assets/heart.svg'
 
-export default function ProductItems() {
+export default function ProductItems({prod_info}) {
     return (
                     <div className=''>
                         <div className='relative rounded-xl overflow-hidden bg-[#f5f6f6] text-center mb-7'>
-                            <img className=''src={DealsImg} alt="Deals Category"/>
+                            <img src={`${import.meta.env.VITE_API_URL}/image/${prod_info.prod_img}`} alt="Deals Category"/>
                             <img className='absolute top-4 right-4 items-center bg-[#fff] w-10 h-10 rounded-full'src={HeartSvg} alt="Heart icon" />
                         </div>
                         <div>

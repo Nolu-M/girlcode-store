@@ -1,22 +1,22 @@
 import ProductItems from './ProductItems.jsx'
-import { Link } from 'react-router-dom'
+import {useEffect, useState} from 'react'
 
 
 export default function DealsSection() {
-    const DealsList = [
-        {
-            name: "HomePod mini",
-            path: "/deals/homepod-mini"
-        },
-        {
-            name: "Instax Mini 9",
-            path: "/deals/instax-mini 9"
-        },
-        {
-            name: "Base Camp Duffel M",
-            path: "/deals/base camp duffel m"
-        }
-    ]
+    const [prodList, setProdList] = useState([])
+
+    useEffect(() => {
+        fetch(`http://127.0.0.1:5000/products`)
+            .then(resp => resp.json())
+            .then(resp => {
+                setProdList(resp.products)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+    }, [])
+
+
     return (
         <section className='pt-20'>
             <div className='container mx-auto'>
@@ -24,12 +24,11 @@ export default function DealsSection() {
                     <h2 className='text-2xl font-extrabold'>Todays Best Deals For You!</h2>
                 </div>
                 <div className='grid grid-cols-3 gap-8'>
-                    { DealsList.map( deals => (
-                        <Link to={deals.path} key={deals.name}>
-                            <ProductItems />
-                        </Link>
-                        
-                    )) }
+                    {
+                        prodList.map(prod => (
+                            <ProductItems key={prod.id} prod_info={prod}/>
+                        ))
+                    }
                 </div>
             </div>    
         </section>
