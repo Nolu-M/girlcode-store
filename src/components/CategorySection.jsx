@@ -17,7 +17,6 @@ export default function CategorySection()  {
     }, [])
 
 
-
     return (
         <section className='pt-20'>
             <div className='container mx-auto'>
