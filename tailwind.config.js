@@ -8,7 +8,8 @@ export default {
         'primary': ['Manrope', 'sans-serif']
       }, 
       backgroundImage: {
-        'hero-section': "url('/src/assets/hero-section.png')"
+        'hero-section': "url('/src/assets/hero-section.png')",
+        'page-header': "url('/src/assets/cat-page-header.jpg')"
       },
       colors: {
         'girlcode-pink': "#e94154"
