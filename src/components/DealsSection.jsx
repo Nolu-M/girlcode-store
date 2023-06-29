@@ -6,7 +6,7 @@ export default function DealsSection() {
     const [prodList, setProdList] = useState([])
 
     useEffect(() => {
-        fetch(`http://127.0.0.1:5000/products`)
+        fetch(`${import.meta.env.VITE_API_URL}/products`)
             .then(resp => resp.json())
             .then(resp => {
                 setProdList(resp.products)

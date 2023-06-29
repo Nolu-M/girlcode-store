@@ -3,7 +3,7 @@ import CategorySection from '../components/CategorySection.jsx'
 import DealsSection from '../components/DealsSection.jsx'
 import MainLayout from '../layouts/MainLayout.jsx'
 
-export default function() {
+export default function Home() {
     return (
         <MainLayout>
           <Hero/>
