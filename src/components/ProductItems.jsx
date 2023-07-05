@@ -25,6 +25,26 @@ export default function ProductItems({prod_info}) {
         )
     }
 
+    const addToCart = (evt) => {
+        let cartArray = JSON.parse(localStorage.getItem('cart')) ?? []
+        const prodId = evt.target.dataset.prodId
+        let foundItem = cartArray.find(prod => Number(prodId) === prod.id)
+        let foundIndex = cartArray.findIndex(prod => Number(prodId) === prod.id)
+        
+        if(!foundItem) {
+            let currProd = prod_info
+            currProd.count = 1
+            cartArray.push(currProd)
+            
+            localStorage.setItem('cart', JSON.stringify(cartArray))
+        } else {
+            foundItem.count = ++foundItem.count
+            cartArray[foundIndex] = foundItem
+
+            localStorage.setItem('cart', JSON.stringify(cartArray))
+        }
+    }
+
     return (
                     <Link to={`/product/${prod_info.prod_slug}`}  className=''>
                         <div className='relative rounded-xl overflow-hidden bg-[#f5f6f6] text-center mb-7'>

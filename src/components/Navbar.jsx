@@ -32,9 +32,9 @@ export default function NavBar() {
                 <a className='font-bold'href="#">
                 <span className="material-symbols-outlined align-middle">person</span>
                 Account</a>
-                <a className='ml-2.5'href="#">
+                <Link to='/cart' className='ml-2.5' href='/cart'>
                 <span className="material-symbols-outlined align-middle">shopping_cart</span>
-                Cart</a>
+                Cart</Link>
                 </div>
             </div>
         </div>
