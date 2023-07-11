@@ -6,12 +6,22 @@ import MainLayout from '../layouts/MainLayout.jsx'
 export default function Category() {
     let { catSlug} = useParams()
     let [catInfo, setCatInfo] = useState({})
+    const [prodList, setProdList] = useState([])
+
 
     useEffect(() => {
         fetch(`${import.meta.env.VITE_API_URL}/category/${catSlug}`)
             .then(resp => resp.json())
             .then(resp => {
                 setCatInfo(resp)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+        fetch(`${import.meta.env.VITE_API_URL}/products`)
+            .then(resp => resp.json())
+            .then(resp => {
+                setProdList(resp.products)
             })
             .catch(error => {
                 console.log(error)
