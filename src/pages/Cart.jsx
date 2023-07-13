@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom'
 import MainLayout from '../layouts/MainLayout'
 import { useEffect, useState } from "react"
+
 
 
 export default function Cart() {
@@ -84,6 +86,9 @@ export default function Cart() {
                     <div className="flex justify-between pt-5 border-t-2 border-gray-200">
                         <div className="text-xl font-bold uppercase">Total :</div>
                         <div className="text-xl font-bold">R{currTotal}</div>
+                    </div>
+                    <div className="mt-5">
+                        <Link to="/checkout" className="btn bg-girlcode-pink text-white text-lg">Checkout</Link>
                     </div>
                 </div>
             </section>

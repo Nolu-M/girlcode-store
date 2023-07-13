@@ -4,6 +4,8 @@ import Category from './pages/Category.jsx'
 import './App.css'
 import Product from './pages/Product.jsx'
 import Cart from './pages/Cart.jsx'
+import Checkout from './pages/Checkout.jsx'
+
 
 
 
@@ -16,6 +18,7 @@ export default function App() {
         <Route path='/category/:catSlug' element={<Category />} />
         <Route path='/product/:prodSlug' element={<Product />} />
         <Route path='/cart' element={<Cart/>} />
+        <Route path='/checkout' element={<Checkout/>} />
       </Routes>
     </>
     
