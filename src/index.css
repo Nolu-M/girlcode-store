@@ -11,4 +11,3 @@
 .btn-atc {
     @apply btn border border-black hover:bg-girlcode-pink hover:border-girlcode-pink hover:text-white;
 }
-

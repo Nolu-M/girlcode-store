@@ -65,7 +65,7 @@ export default function ProductItems({prod_info}) {
                                 <img className=' mr-0.5'src={StarSvg} alt="star rating" />
                                 <p className='ml-1'> (121)</p>
                             </div>
-                            <a className='btn btn-atc' href='#'>Add to Cart</a>
+                            <a className='btn btn-atc' data-prod-id={prod_info.id} onClick={addToCart} href='#'>Add to Cart</a>
                         </div>
                     </Link>
     )
